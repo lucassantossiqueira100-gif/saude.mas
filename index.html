@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    <title>CLICK SALVE - Vida salva em um clique</title>
+    <link rel="stylesheet" href=".//css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-item">
+            <img src="./paginas-layout/saude.jpg" alt="Logo Click Salve">
+            <h1>CLIQUE SALVE</h1>
+        </div>
+    </header>
+
+    <!-- GRID DAS SITUAÇÕES -->
+    <div class="layout">
+        <div class="situacoes">
+
+            <div class="card" data-page="./html/parada.html" role="button" tabindex="0">
+                <img src="./paginas-layout/parada.png" alt="Parada Cardiorespiratória">
+                <h2>Parada Cardiorespiratória</h2>
+            </div>
+
+            <div class="card" data-page="./html/animais.html" role="button" tabindex="0">
+                <img src="./paginas-layout/peçonhentos.png" alt="Animais Peçonhentos">
+                <h2>Animais Peçonhentos</h2>
+            </div>
+
+            <div class="card" data-page="./html/engasgos.html" role="button" tabindex="0">
+                <img src="./paginas-layout/engasgo.png" alt="Engasgamentos">
+                <h2>Engasgamentos</h2>
+            </div>
+
+            <div class="card" data-page="./html/afogamento.html" role="button" tabindex="0">
+                <img src="./paginas-layout/Afogamento.png" alt="Afogamento">
+                <h2>Afogamento</h2>
+            </div>
+
+            <div class="card" data-page="./html/incendio.html" role="button" tabindex="0">
+                <img src="./paginas-layout/incendio.png" alt="Incêndio">
+                <h2>Queimadura</h2>
+            </div>
+
+            <div class="card" data-page="./html/ferimentos.html" role="button" tabindex="0">
+                <img src="./paginas-layout/ambulancia.png" alt="Ferimentos">
+                <h2>Ferimentos e Lesões</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOTÃO LIGAR -->
+<button id="BotaoLigar" class="BotaoLigar">
+    <img src=".//paginas-layout/phone.png" alt="Ligar">
+</button>
+
+    <!-- MODAL -->
+    <div class="Modal" id="modal">
+        <div class="Modal-content">
+            <span class="close-button" id="closeBtn">&times;</span>
+            <h2>Escolha o serviço de emergência</h2>
+
+            <div class="emergency-buttons">
+                <a class="btn-emergency" href="tel:192">Ligar para SAMU (192)</a>
+                <a class="btn-emergency" href="tel:193">Ligar para Bombeiros (193)</a>
+                <a class="btn-emergency" href="tel:190">Ligar para Polícia (190)</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column footer-about">
+                <h4>Click Salve</h4>
+                <p>Aplicativo informativo para orientar ações iniciais em emergências. Este site não substitui o atendimento profissional.</p>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h4>Contato rápido</h4>
+                <p><strong>SAMU:</strong> 192</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>© 2025 Click Salve — Informação educacional. Em emergência, ligue para os serviços locais.</small>
+        </div>
+    </footer>
+ <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+</body>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</html>
